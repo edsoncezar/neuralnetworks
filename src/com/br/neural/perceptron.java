@@ -440,9 +440,9 @@ public class perceptron {
 				for(int j=0;j<getNumOutputs();j++) {
 					setError2(itr,j, (getoutputs(itr,j) - getFnet1(j)));
 					// output data printout
-					System.out.println ("Cycle:" + "" + getCycleStart () + "" + "Example:" + "" + (itr + 1));
+					System.out.println ("\r\n" + "Cycle:" + "" + getCycleStart () + "\r\n" + "Example:" + "" + (itr + 1) + "\r\n");
 
-					System.out.println ("Desired output:" + "" + getoutputs (itr, j) + "" + "Calculated output:"+ "" + getFnet1 (j));
+					System.out.println ("Desired output:" + "" + getoutputs (itr, j) + "\r\n" + "Calculated output:"+ "" + getFnet1 (j));
 					System.out.println ("Error:" + "" + getError2 (itr, j));
 
 				}

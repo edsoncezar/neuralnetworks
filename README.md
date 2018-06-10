@@ -109,4 +109,39 @@ Supervised Learning —Essentially, a strategy that involves a teacher that is s
 Unsupervised Learning —Required when there isn’t an example data set with known answers. Imagine searching for a hidden pattern in a data set. An application of this is clustering, i.e. dividing a set of elements into groups according to some unknown pattern. We won’t be looking at any examples of unsupervised learning in this chapter, as this strategy is less relevant for our examples.
 
 
-Reinforcement Learning —A strategy built on observation. Think of a little mouse running through a maze. If it turns left, it gets a piece of cheese; if it turns right, it receives a little shock. (Don’t worry, this is just a pretend mouse.) Presumably, the mouse will learn over time to turn left. Its neural network makes a decision with an outcome (turn left or right) and observes its environment (yum or ouch). If the observation is negative, the network can adjust its weights in order to make a different decision the next time. Reinforcement learning is common in robotics. At time t, the robot performs a task and observes the results. Did it crash into a wall or fall off a table? Or is it unharmed? We’ll look at reinforcement learning in the context of our simulated steering vehicles.
+Reinforcement Learning —A strategy built on observation. Think of a little mouse running through a maze. If it turns left, it gets a piece of cheese; if it turns right, it receives a little shock. (Don’t worry, this is just a pretend mouse.) Presumably, the mouse will learn over time to turn left. Its neural network makes a decision with an outcome (turn left or right) and observes its environment (yum or ouch). If the observation is negative, the network can adjust its weights in order to make a different decision the next time. Reinforcement learning is common in robotics. At time t, the robot performs a task and observes the results.
+
+This simple perceptron algorithm has a simple goal to represent a load balance, example: 
+
+
+Input Input Output
+
+X1    X2    D (desired)
+
+off   off   Not OK
+
+off   on    Not OK
+
+on    Off   Not OK
+
+on    on    OK
+
+
+
+Input Input Output
+
+X1    X2    D (desired)
+
+0     0     Not OK (0)
+
+0     1     Not OK (0)
+
+1     0     Not OK (0)
+
+1     1     OK (1)
+
+
+This is just a start, I will explain more about in the future
+
+
+
