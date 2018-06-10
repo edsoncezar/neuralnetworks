@@ -242,10 +242,10 @@ public class perceptron {
 
 
 	/**
-	 * Atribui o valor do deltabs1 no �ndice indicado.
-	 * @param index: �ndice do vetor.
-	 * @param value: valor que ser� atribu�do.
-	 */
+	* Assigns the value of deltabs1 to the given index.
+	* @param index: vector index.
+	* @param value: value to be assigned.
+	*/
 	public static void setDeltabs1(int index, double value){
 		deltabs1[index]=value;
 	}
