@@ -141,7 +141,9 @@ X1    X2    D (desired)
 1     1     OK (1)
 
 
-This is just a start, I will explain more about in the future
+This is just a start, I will explain more about in the future:
+
+http://edsonmcz.blogspot.com/2018/06/simple-explanation-about-artificial.html
 
 
 
