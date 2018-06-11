@@ -7,7 +7,7 @@ import java.util.Random;
  * @author edson
  *
  */
-public class perceptron {
+public class Perceptron {
 	
 	private static double bias[];
 	
