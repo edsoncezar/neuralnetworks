@@ -190,6 +190,6 @@ o is the target (desired) output
 then the weights are updated as follows w\leftarrow w+\eta (o-y)x. The ADALINE converges to the least squares error which is E=(o-y)^{2}.[6] This update rule is in fact the stochastic gradient descent update for linear regression.[7]
 
 
-
+http://edsonmcz.blogspot.com/2018/06/adaline-adaptive-linear-neuron.html
 
 
