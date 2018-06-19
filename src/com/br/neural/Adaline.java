@@ -9,7 +9,8 @@ import java.util.Random;
  */
 public class Adaline {
 	
-private static double bias[];
+	//Defines a hyperplane passing through the source
+    private static double bias[];
 	
 	private static double deltabs1[];
 
@@ -482,7 +483,7 @@ private static double bias[];
 
 	
 	/**
-	 * M�todo principal
+	 * Main method
 	 * @param args
 	 */
 	public static void main(String[] args){
@@ -514,6 +515,7 @@ private static double bias[];
 		// Start the random weights.
 		randomize ();
 
+		// Initializes the values of the inputs matrix.
 		double [][] inputsInit = {{0.3,0.1,0.1},
 				{0.03,0.02,0.0},
 				{1.0,1.0,1.0},

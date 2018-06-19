@@ -9,6 +9,7 @@ import java.util.Random;
  */
 public class Perceptron {
 	
+	//Defines a hyperplane passing through the source
 	private static double bias[];
 	
 	private static double deltabs1[];
@@ -508,6 +509,7 @@ public class Perceptron {
 	// Start the random weights.
 	randomize ();
 
+	// Initializes the values of the inputs matrix.
 	double [] [] inputsInit = {{1,1,1,0,1,0,0,1,0},
 	{1,0,1,1,1,1,1,0,1}};
 
