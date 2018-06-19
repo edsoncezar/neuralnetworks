@@ -204,7 +204,7 @@ Minsky and Papert mathematically analyzed Perceptron and demonstrated that singl
 The multilayer perceptron (MLP) is a neural network similar to perceptron, but with more than one layer of neurons in direct power. Such a network is composed of layers of neurons connected to each other by synapses with weights. Learning in this type of network is usually done through the back-propagation error algorithm, but there are other algorithms for this purpose, such as Rprop.
 
 
-
+http://edsonmcz.blogspot.com/2018/06/multi-layer-perceptrons-mlp-and.html
 
 
 
