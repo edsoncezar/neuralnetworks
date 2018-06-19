@@ -699,7 +699,7 @@ public class BackpropagationMLP {
 	*/
 	public static void randomize(){
 
-		//Cria uma inst�ncia de Random
+		//Create an Instance of Random
 		Random random = new Random(getSeed());
 
 		for (int j=0; j<getNumHidden(); j++) {
@@ -756,15 +756,15 @@ public class BackpropagationMLP {
 					setNetout(itr,j, (double) (1.0/(1.0+eb)));
 				}
 
-				//Reajustando os pesos
+				//Readjustment of Weights		
 				for(int j=0;j<getNumOutputs();j++) {
 					setErro2(itr,j, (getOutputs(itr,j) - getNetout(itr,j)));
-					//impress�o dos dados de sa�da
-					System.out.println("Ciclo:"+ " "+ getCycleStart() + "  "+	"Exemplo:" +" "+ (itr+1));
+					// output data printout
+					System.out.println("Cycle:"+ " "+ getCycleStart() + "  "+	"Example:" +" "+ (itr+1));
 
-					System.out.println("Sa�da desejada:"+" "  +  getOutputs(itr,j)+ "  "+ "Sa�da calculada:" 
+					System.out.println("Desired output:"+" "  +  getOutputs(itr,j)+ "  "+ "Calculated output:" 
 					+" " +getNetout(itr,j));
-					System.out.println("Erro:" +" "+ getError2(itr,j));
+					System.out.println("Error:" +" "+ getError2(itr,j));
 					
 									
 					setDeltabs2(j,( getAlfa() * getError2(itr,j))*getNetout(itr,j)*
@@ -801,7 +801,7 @@ public class BackpropagationMLP {
 					for(int ii=0;ii<getNumInputs();ii++) {
 
 						setWeights1(j,ii, getWeights1(j,ii)+(getDeltaweights1(j,ii)));
-						System.out.println("Peso:" +" "+ (j+1)+" " + (ii+1) + "    " +getWeights1(j,ii));
+						System.out.println("Weights:" +" "+ (j+1)+" " + (ii+1) + "    " +getWeights1(j,ii));
 
 						
 						setOlddeltaweights1(j,ii, getDeltaweights1(j,ii));
@@ -816,7 +816,7 @@ public class BackpropagationMLP {
 					for(int i=0;i<getNumHidden();i++) {
 						setWeights2(j,i, getWeights2(j, i)+ (getDeltaweights2(j,i)));
 						setOlddeltaweights2(j, i, getDeltaweights2(j, i));
-						System.out.println("Peso:" +" "+ (j+1)+" " + (i+1) + "    " +getWeights2(j,i));
+						System.out.println("Weights:" +" "+ (j+1)+" " + (i+1) + "    " +getWeights2(j,i));
 
 						
 					}
